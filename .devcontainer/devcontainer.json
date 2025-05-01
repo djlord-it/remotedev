@@ -1,0 +1,16 @@
+{
+  "name": "Ubuntu Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Ubuntu base image
+  "forwardPorts": [8003],  // Change or remove if not needed
+
+  "postCreateCommand": "apt update && apt install -y openjdk-17-jdk",  // example: install Java
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ]
+}
+
